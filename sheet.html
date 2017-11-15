@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="nojs">
+
+<head>
+	<title>Timesheet</title>
+	<meta charset="UTF-8">
+	<link href"https://fonts.googleapis.com/css?family=Amatic+SC|Zeyada" rel="stylesheet">
+	<link rel="stylesheet" media="screen" href="style.css"/>
+	<link rel="icon" href="images/iitlogo.png">
+</head>
+
+<body>
+	<div id="navi">
+		<img src = "myiit2.png" alt ="iit">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#.html">Welcome</a></li>
+				<li><a href="sheet.html">Time Sheet</a></li>
+			</ul>
+		</nav>	
+	</div>
+	<h1>Timesheet</h1>
+	<h3>Submit your Timesheet</h3>
+	<p>
+		<script> document.write(new Date().toLocaleDateString()); </script>
+	</p>
+
+	<p><b>Note:</b> The time will be recorded only the total of bi-weekly timesheet. The time submitted will be approved by supervisor if inserted correctly.</p>
+
+	<form action="submitted.php">
+		<fieldset>
+			Total hours worked:<br>
+			<input type="number" step="any" name="hours"><br> i.e 1.25 = 1 hour 15 minutes; 2.75 = 2 hours 45 minutes.
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+</body>
+
+</html>
