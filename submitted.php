@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <body>
-	<?php
-	echo "Your timesheet will be reviewed and approved by your supervisor accordingly.";
-	?>
+	<p>
+		Your timesheet will be reviewed and approved by your supervisor accordingly.
+	</p>
 </body>
 </html>
