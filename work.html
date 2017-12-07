@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Timesheet</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" media="screen" href="CSS/style.css"/>
+	<link rel="icon" href="images1/iitlogo.png">
+</head>
+
+<body>
+	<img src = "images1/myiit2.PNG" alt ="Banner">
+	<header>
+		<nav>
+			<div class="nav" id="myNav">
+				<ul>
+					<li><a href="welcome.html">Welcome</a></li>
+					<li><a href="welcome.html">Academics</a></li>
+					<li><a href="welcome.html">Student Life</a></li>
+					<li><a href="welcome.html">Finances</a></li>
+					<li><a href="welcome.html">Athletics</a></li>
+					<li><a href="work.html">Work</a></li>
+					<li><a href="welcome.html">Library</a></li>
+					<li><a href="welcome.html">Research</a></li>
+					<li><a href="welcome.html">My Stuff</a></li>
+					<li><a href="welcome.html">Training and Support</a></li>
+					<li><button onclick="window.location.href='index.html'"><img src= "images1/logout.jpg" alt="Logout" height="45" width="45"></button></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<h1>Timesheet</h1>
+	<h4>Today's Date: <script> document.write(new Date().toLocaleDateString()); </script>
+	</h4>
+	<h5>Note: The time will be recorded only the total of bi-weekly timesheet. The time submitted will be approved by supervisor if inserted correctly.</h5>
+
+	<form>
+		<fieldset>
+			Total hours worked:
+			<input type="number" min="0.01" step="any" name="hours">
+			<h2>(i.e 1.25 = 1 hour 15 minutes; 2.75 = 2 hours 45 minutes.)</h2>
+			<button onclick="myFunction()">Submit Hours</button>
+
+			<script>
+				function myFunction() {
+					alert("Thank you for submitting your hours! Your supervisor will review and approve the timesheet accordingly.");
+				}
+			</script>
+		</fieldset>
+
+	</form>
+</body>
+
+</html>
